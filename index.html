@@ -5,13 +5,13 @@
 	<body>
 		<pre class="mermaid">
 			flowchart TB
-			    subgraph ECUS
+				subgraph ECUS
 			        subgraph VHU
-			            direction LR
-			            Boot-loader ---> test0((Test)) ---> test_VHU((Test VHU))
-			            Yocto ---> test1((Test)) ---> test_VHU((Test VHU))
-			            Micro-Services ---> test2((Test)) ---> test_VHU((Test VHU))
-			            Front-App ---> test3((Test)) ---> test_VHU((Test VHU))
+					direction LR
+					Boot-loader ---> test0((Test)) ---> test_VHU((Test VHU))
+					Yocto ---> test1((Test)) ---> test_VHU((Test VHU))
+					Micro-Services ---> test2((Test)) ---> test_VHU((Test VHU))
+					Front-App ---> test3((Test)) ---> test_VHU((Test VHU))
 			        end
 			        subgraph VCM
 			        end
@@ -59,9 +59,9 @@
 			        end
 			        subgraph CAMERA
 			        end
-			    end
-			    test_VHU ---> testbench((Bench 1))
-			    click Micro-Services href "https://www.google.com" "This is a link"
+			end
+			test_VHU ---> testbench((Bench 1))
+		    	click Micro-Services href "https://www.google.com" "This is a link"
 		</pre>
 	</body>
 	<script type="module">
